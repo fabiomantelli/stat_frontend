@@ -1,0 +1,62 @@
+ 
+#table-head {
+    font-size: 10px;
+}
+
+#table-body {
+    font-size: 14px;
+}
+
+#table-stat {
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    /* border-collapse: collapse; */
+    /* border: 1px solid #116466; */
+    width: 100%;
+}
+
+#table-stat td {
+border: 1px solid #c9925f;
+padding: 8px;
+
+}
+
+#table-stat tr:nth-child(even){background-color: #e7b783;}
+
+#table-stat tr:hover {background-color: #e2b388;}
+
+#table-stat th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: center;
+background-color: #116466;
+color: white;
+}
+
+.red {
+    background-color: rgb(206, 26, 26);
+}
+
+.red:hover {
+    background-color: rgb(182, 34, 34);
+    
+}
+
+.green {
+    background-color: #2ec321;
+}
+
+.green:hover {
+    background-color: #25971a; 
+    
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+
+.yellow:hover {
+    background-color: rgb(207, 207, 6);
+    
+}
