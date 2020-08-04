@@ -1,12 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
 
-import Login from './pages/login/login';
-import SignUp from './pages/signup/signup';
-import Dashboard from './pages/dashboard/dashboard';
-import Home from './pages/home/home';
-import PrivateRoute from './utils/PrivateRoute';
-import PublicRoute from './utils/PublicRoute';
+import Login from '../pages/login';
+import SignUp from '../pages/signup';
+import Dashboard from '../pages/dashboard';
+import Home from '../pages/home';
+import PrivateRoute from '../utils/PrivateRoute';
+import PublicRoute from '../utils/PublicRoute';
+
+import '../styles/routes.css'
 
 export const Routes = () => {
     return (

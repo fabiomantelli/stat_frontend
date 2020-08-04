@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css'
+import '../styles/StatTable.css'
 
 export default function StatTable(props) {
 

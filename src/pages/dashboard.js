@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { getUser, removeUserSession } from '../../utils/Common';
-import api from '../../api'
-import './dashboard.css';
+import { getUser, removeUserSession } from '../utils/Common';
+import api from '../global/api'
+import '../styles/dashboard.css';
 
 // import Components
-import StatTable from '../../components/StatTable/StatTable'
-import SearchBar from '../../components/SearchBar/SearchBar'
+import StatTable from '../components/StatTable'
+import SearchBar from '../components/SearchBar'
 
 export default function Dashboard(props) {
 
@@ -21,7 +21,6 @@ export default function Dashboard(props) {
     ]
     
     const [date, setDate] = useState(newDate);
-    
     const [rows, setRows] = useState(initialStat);
     
     const user = getUser();

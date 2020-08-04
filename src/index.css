@@ -1,35 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet');
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #F3F0E1;
-}
- 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
- 
-.content {
-  padding: 20px;
-}
- 
-.header {
-  padding: 15px;
-  background-color: #1D4D6B;
-}
-.header a {
-  color: #F3F0E1;
-  text-decoration: none;
-  margin-left: 20px;
-  margin-right: 5px;
-}
-.header a:hover {
-  color: #C74441;
-}
-.header small {
-  color: #D8CFD0;
-}
-.header .active {
-  color: #D8CFD0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
 }

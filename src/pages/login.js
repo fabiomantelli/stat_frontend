@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import api from '../../api'
-import { setUserSession } from '../../utils/Common';
+import api from '../global/api'
+import { setUserSession } from '../utils/Common';
 
-import './login.css';
+import '../styles/login.css';
+
 require('dotenv/config');
 
 function Login(props) {

@@ -1,0 +1,23 @@
+.content {
+    padding: 20px;
+  }
+   
+  .header {
+    padding: 15px;
+    background-color: #1D4D6B;
+  }
+  .header a {
+    color: #F3F0E1;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 5px;
+  }
+  .header a:hover {
+    color: #C74441;
+  }
+  .header small {
+    color: #D8CFD0;
+  }
+  .header .active {
+    color: #D8CFD0;
+  }

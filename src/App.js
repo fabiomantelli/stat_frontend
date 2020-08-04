@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
- 
 import { getToken, removeUserSession, setUserSession } from './utils/Common';
-
-import './App.css';
-import { Routes } from './routes';
-
-import api from './api'
+import { Routes } from './global/routes';
+import api from './global/api'
  
 function App() {
   const [authLoading, setAuthLoading] = useState(true);
