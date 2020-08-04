@@ -1,9 +1,8 @@
 body {
   margin: 0;
-  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #FFCB9A;
+  background: #F3F0E1;
 }
  
 code {
@@ -16,23 +15,21 @@ code {
 }
  
 .header {
-  padding: 10px;
-  background: #edf2f4;
-  border-bottom: 1px solid #999;
-  background-color: #1E555C;
+  padding: 15px;
+  background-color: #1D4D6B;
 }
 .header a {
-  color: #FFF;
+  color: #F3F0E1;
   text-decoration: none;
   margin-left: 20px;
   margin-right: 5px;
 }
 .header a:hover {
-  color: #8a0f53;
+  color: #C74441;
 }
 .header small {
-  color: #D9B08C;
+  color: #D8CFD0;
 }
 .header .active {
-  color: #EDC7B7;
+  color: #D8CFD0;
 }

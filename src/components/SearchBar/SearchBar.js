@@ -20,9 +20,18 @@ export default function SearchBar(props) {
                         onClick={props.sendDate}
                     />
                 </div> */}
+                 <>
+                 </>
                 <div className="crud">
                     <h1 id="list-data">Listar Dados por Data</h1>
-                    <label>
+                    <input 
+                        id="date" 
+                        name="list"
+                        value={props.date}
+                        type="date"
+                        onChange={e => props.setDate(e.target.value)}
+                    />
+                    {/* <label>
                         Date:
                         <input 
                             type="text"
@@ -30,7 +39,7 @@ export default function SearchBar(props) {
                             value={props.date}
                             onChange={e => props.setDate(e.target.value)}
                         />
-                    </label>
+                    </label> */}
                     <input 
                         type="submit" 
                         onClick={props.getData}

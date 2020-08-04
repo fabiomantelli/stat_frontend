@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import api from '../../api'
 
-import './style.css';
-
 export default function SignUp() {
     const name = useFormInput('');
     const username = useFormInput('');

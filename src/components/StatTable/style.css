@@ -16,12 +16,12 @@
 }
 
 #table-stat td {
-border: 1px solid #c9925f;
+border: 1px solid #D8CFD0;
 padding: 8px;
 
 }
 
-#table-stat tr:nth-child(even){background-color: #e7b783;}
+#table-stat tr:nth-child(even){background-color: #cea67c;}
 
 #table-stat tr:hover {background-color: #e2b388;}
 
@@ -29,8 +29,8 @@ padding: 8px;
 padding-top: 12px;
 padding-bottom: 12px;
 text-align: center;
-background-color: #116466;
-color: white;
+background-color: #167972;
+color: #DEB992;
 }
 
 .red {

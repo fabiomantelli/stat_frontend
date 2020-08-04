@@ -3,7 +3,7 @@ import React from 'react';
 function Home() {
     return (
         <div>
-            Bem-vindo ao Projeto MedFasee Baixa Tensão.
+            Projeto MedFasee Baixa Tensão.
         </div>
     )
 }
