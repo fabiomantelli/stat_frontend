@@ -13,7 +13,6 @@ import '../styles/routes.css'
 export const Routes = () => {
     return (
         <BrowserRouter>
-            <div>
             <div className="header">
                 <NavLink exact activeClassName="active" to="/">Home</NavLink>
                 {/* <NavLink exact activeClassName="active" to="/signup">SignUp</NavLink> */}
@@ -27,7 +26,6 @@ export const Routes = () => {
                 <PublicRoute path="/signup" component={SignUp} />
                 <PrivateRoute path="/dashboard" component={Dashboard} />
                 </Switch>
-            </div>
             </div>
         </BrowserRouter>
     )

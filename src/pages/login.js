@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import api from '../global/api'
 import { setUserSession } from '../utils/Common';
 
-import '../styles/login.css';
+import LoginScreen from '../components/LoginScreen';
 
 require('dotenv/config');
 
@@ -11,7 +11,6 @@ function Login(props) {
     const password = useFormInput('');
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
-
 
     // handle button click of login form
     const handleLogin =  async () => {
@@ -31,19 +30,13 @@ function Login(props) {
     }
 
     return (
-        <div className="login">
-            <br /><br />
-                <div>
-                    Username<br />
-                    <input className="input-login" type="text" {...username} autoComplete="new-password" />
-                </div>
-                <div style={ { marginTop: 10 }}>
-                    Password<br />
-                    <input className="input-login" type="password" {...password} autoComplete="new-password" />
-                </div>
-                {error && <><small style={{ color: 'red' }}>Login or password invalid.</small><br /></>}<br />
-                <input className="btn btn-primary btn-block btn-large" type="button" value={loading ? 'Loading...' : 'Login'} onClick={handleLogin} disabled={loading} /><br />
-        </div>
+        <LoginScreen 
+            error={error} 
+            username={username} 
+            password={password}
+            loading={loading} 
+            handleLogin={handleLogin}
+        />
     )
 
 }

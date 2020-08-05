@@ -16,47 +16,19 @@
 }
 
 #table-stat td {
-border: 1px solid #D8CFD0;
+border: 1px solid #c4bbbc;
 padding: 8px;
 
 }
 
-#table-stat tr:nth-child(even){background-color: #cea67c;}
-
-#table-stat tr:hover {background-color: #e2b388;}
+#table-stat tr:hover {
+    background-color: #bebdbd;
+}
 
 #table-stat th {
-padding-top: 12px;
-padding-bottom: 12px;
-text-align: center;
-background-color: #167972;
-color: #DEB992;
-}
-
-.red {
-    background-color: rgb(206, 26, 26);
-}
-
-.red:hover {
-    background-color: rgb(182, 34, 34);
-    
-}
-
-.green {
-    background-color: #2ec321;
-}
-
-.green:hover {
-    background-color: #25971a; 
-    
-}
-
-.yellow {
-    background-color: yellow;
-}
-
-
-.yellow:hover {
-    background-color: rgb(207, 207, 6);
-    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #1D4D6B;
+    color: #FFF;
 }

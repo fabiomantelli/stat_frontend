@@ -4,7 +4,7 @@
    
   .header {
     padding: 15px;
-    background-color: #1D4D6B;
+    background-color: hsl(203, 57%, 27%);
   }
   .header a {
     color: #F3F0E1;
@@ -13,7 +13,7 @@
     margin-right: 5px;
   }
   .header a:hover {
-    color: #C74441;
+    color: #f0cf77;
   }
   .header small {
     color: #D8CFD0;

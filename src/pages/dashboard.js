@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { getUser, removeUserSession } from '../utils/Common';
 import api from '../global/api'
-import '../styles/dashboard.css';
 
 // import Components
 import StatTable from '../components/StatTable'
@@ -41,7 +40,7 @@ export default function Dashboard(props) {
         .catch(function (error) {
             console.log(error);
         })
-        }
+    }
 
     
     async function getData() {
