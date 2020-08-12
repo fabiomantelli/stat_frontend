@@ -8,17 +8,38 @@ import Home from '../pages/home';
 import PrivateRoute from '../utils/PrivateRoute';
 import PublicRoute from '../utils/PublicRoute';
 
-import '../styles/routes.css'
+import styled from 'styled-components';
+
+const Header = styled.header`
+    padding: 1rem;
+    background-color: hsl(203, 57%, 27%);
+`
+const LinkNavegation = styled(NavLink)`
+    color: #F3F0E1;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 1.143rem;
+
+    &:hover {
+        color: #f0cf77;
+    }
+
+    &.active {
+        color: #f0cf77;
+    }
+`
 
 export const Routes = () => {
     return (
         <BrowserRouter>
-            <div className="header">
-                <NavLink exact activeClassName="active" to="/">Home</NavLink>
-                {/* <NavLink exact activeClassName="active" to="/signup">SignUp</NavLink> */}
-                <NavLink activeClassName="active" to="/login">Login</NavLink><small>(Acesso sem token)</small>
-                <NavLink activeClassName="active" to="/dashboard">Dashboard</NavLink><small>(Acesso com token)</small>
-            </div>
+            <Header>
+                <LinkNavegation exact activeClassName="active" to="/">Home</LinkNavegation>
+                {/* <LinkNavegation exact activeClassName="active" to="/signup">SignUp</LinkNavegation> */}
+                <LinkNavegation activeClassName="active" to="/login">Login</LinkNavegation>
+                <LinkNavegation activeClassName="active" to="/dashboard">Dashboard</LinkNavegation>
+            </Header>
             <div className="content">
                 <Switch>
                 <Route exact path="/" component={Home} />
