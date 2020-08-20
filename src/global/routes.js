@@ -31,6 +31,10 @@ const LinkNavegation = styled(NavLink)`
     }
 `
 
+const Content = styled.div`
+    margin-top: 50px;
+`
+
 export const Routes = () => {
     return (
         <BrowserRouter>
@@ -40,14 +44,14 @@ export const Routes = () => {
                 <LinkNavegation activeClassName="active" to="/login">Login</LinkNavegation>
                 <LinkNavegation activeClassName="active" to="/dashboard">Dashboard</LinkNavegation>
             </Header>
-            <div className="content">
+            <Content>
                 <Switch>
                 <Route exact path="/" component={Home} />
                 <PublicRoute path="/login" component={Login} />
                 <PublicRoute path="/signup" component={SignUp} />
                 <PrivateRoute path="/dashboard" component={Dashboard} />
                 </Switch>
-            </div>
+            </Content>
         </BrowserRouter>
     )
 }
